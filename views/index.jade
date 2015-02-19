@@ -1,40 +1,58 @@
 extends layout
 
 block content
- div.container-fluid
-  h1= title
-  p Esta es una prueba para #{title}
+ div.navmenu.navmenu-default.navmenu-fixed-left
+  a.navmenu-brand(href='#')
+  ul.nav.navmenu-nav
+   li
+    a(href='#') Tareas
+   li
+    a(href='#') Contactos
+   li
+    a(href='#') Productos y Servicios
+   li
+    a(href='#') Proyectos
+   li
+    a(href='#') Convenios
+   li
+    a(href='#') Mesa de Entrada
+   li
+    a(href='#') Usuarios 
+    
 
-  
-   table.table.table-striped.table-hover
-    thead
-     tr
-      th #
-      th Nombre
-      th Apellido
-      th Relación
+ div.canvas
+  div.navbar.navbar-default.navbar-fixed-top
+   button.navbar-toggle(type='button', data-toggle='offcanvas', data-recalc='false', data-target='.navmenu', data-canvas='.canvas')
+    span.icon-bar
+    span.icon-bar
+    span.icon-bar
 
-    tbody
-     tr
-      th 1
-      td Martín
-      td Hayón
-      td Contacto
+  div.container
+   div.page-header
+    h1 myBig
+    table.table.table-striped.table-hover
+     thead
+      tr
+       th #
+       th Nombre
+       th Apellido
+       th Relación
 
-     tr
-      th 2
-      td Emiliano
-      td Benages
-      td Contacto
+     tbody
+      tr
+       th 1
+       td Martín
+       td Hayón
+       td Admin
 
-     tr
-      th 3
-      td Mariano
-      td Logarzo
-      td Contacto
+      tr
+       th 2
+       td Emiliano
+       td Benages
+       td Admin
 
-     tr
-      th 4
-      td BDG S.A.
-      td -
-      td Cliente
+      tr
+       th 3
+       td Adrián
+       td Aloe
+       td Contacto   
