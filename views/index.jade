@@ -1,7 +1,7 @@
 extends layout
 	
 block content
-	div(id='wrapper')
+	div(id='wrapper').toggled
 		div(id='sidebar-wrapper')
 			ul.sidebar-nav
 				li.sidebar-brand
@@ -19,6 +19,7 @@ block content
 						li
 							a(href='#') Usuarios
 
-	div.row
-		div.col-lg-12
-			a(href="#menu-toggle", id="menu-toggle").btn.btn-default myBig
+		div(id='page-content-wrapper')
+			div.row
+				div.col-lg-12
+					a(href='#menu-toggle', id='menu-toggle').btn.btn-default myBig

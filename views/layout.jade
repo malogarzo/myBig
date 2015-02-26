@@ -11,26 +11,32 @@ html
 		title #{title} - myBig
 
 		//Bootstrap Core CSS
-		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
-		//script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
-
-		//JQuery
-		script(src='https://code.jquery.com/jquery-1.10.2.min.js')
+		link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+		
 
 		//Custom Styles
 		link(rel='stylesheet', href='/stylesheets/sidebar-toggle.css')
 
 		//HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
 		//if lt IE 9
-		script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
-		script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+		script(src='//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+		script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 
-		script
-			$("#menu-toggle").click(function(){e.preventDefault();
-			$("#wrapper").toggleClass("toggled");
-			});
+		
  
 
 
 	body
 		block content
+
+		//JQuery
+		script(src='https://code.jquery.com/jquery-1.10.2.min.js')
+
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+
+		script
+			$("#menu-toggle").click(function(){ e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+			});
+
+
