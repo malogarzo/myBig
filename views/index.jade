@@ -23,3 +23,9 @@ block content
 			div.row
 				div.col-lg-12
 					a(href='#menu-toggle', id='menu-toggle').btn.btn-default myBig
+
+
+	script
+		$("#menu-toggle").click(function(e) { e.preventDefault();
+		$("#wrapper").toggleClass("toggled");
+		});	
